@@ -2,15 +2,33 @@
 Python Program for Decision Tree
 
 Decision Tree Implementation Details:
-To be run in python3
 
-decisiontree.py constructs a decision tree with the given parameters.
+Python Version: 3.7.4
 
-Training  and Testing data are to be provided as a pandas DataFrame.
+Libraries Used: Pandas, Numpy
 
-Training and Testing labels are to be provided as a numpy array.
+Explanation:
 
-An example for the same is provided inside the main function of the decisiontree.py file
+decisiontree.py constructs a decision tree with the parameters described below -
+max_depth: the maximum depth upto which the decision tree can be built
+           values allowed: any integer
+split_val_metric: the metric used to divide the data into two parts for a feature
+           values allowed: 'mean' or 'median'
+min_info_gain: the minimum information gain required to make the split
+           values allowed: any real number
+split_node_criterion: the criterion used to measure the information gain for the node
+           values allowed: 'gini' or 'entropy'
 
-The libraries used are pandas and numpy.
+Training  and Testing data are to be provided as a pandas DataFrame
+Training and Testing lables are to be provided as a numpy array
+
+Sample code to run decisiontree.py:
+The given code will construct a decision tree of max_depth=2 from the given data
+    X_train=pd.DataFrame(np.array([[0,0],[1,1],[0,1],[1,0]]))
+    Y_train=np.array([1,1,0,0])
+    dec= DecisionTree(max_depth=2)
+    dec.train(X_train,Y_train)
+    print(dec.predict(pd.DataFrame(np.array([[0,0]]))))
+
+
 
