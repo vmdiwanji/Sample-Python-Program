@@ -10,9 +10,9 @@ Libraries Used: Pandas, Numpy
 Explanation: <br />
 
 decisiontree.py constructs a decision tree with the parameters described below - <br />
-max_depth: the maximum depth upto which the decision tree can be built <br />
-           values allowed: any integer <br />
-split_val_metric: the metric used to divide the data into two parts for a feature <br />
+<Tab>max_depth: the maximum depth upto which the decision tree can be built <br />
+<tab>           values allowed: any integer <br />
+<tab>split_val_metric: the metric used to divide the data into two parts for a feature <br />
            values allowed: 'mean' or 'median' <br />
 min_info_gain: the minimum information gain required to make the split <br />
            values allowed: any real number <br />
