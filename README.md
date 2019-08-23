@@ -1,26 +1,27 @@
 # Sample-Python-Program
-Python Program for Decision Tree
+<b>Python Program for Decision Tree</b>
 
-Decision Tree Implementation Details:
+<b>Decision Tree Implementation Details:</b>
 
-Python Version: 3.7.4
+<b>Python Version:</b> 3.7.4
 
-Libraries Used: Pandas, Numpy
+<b>Libraries Used:</b> Pandas, Numpy
 
-Explanation: <br />
+<b>Explanation:</b> <br />
 
-decisiontree.py constructs a decision tree with the parameters described below - <br />
-<Tab>max_depth: the maximum depth upto which the decision tree can be built <br />
-<tab>           values allowed: any integer <br />
-<tab>split_val_metric: the metric used to divide the data into two parts for a feature <br />
+<b><i>decisiontree.py</i></b> constructs a decision tree with the parameters described below - <br />
+<br />
+<b>max_depth</b>: the maximum depth upto which the decision tree can be built <br />
+           values allowed: any integer <br />
+<b>split_val_metric</b>: the metric used to divide the data into two parts for a feature <br />
            values allowed: 'mean' or 'median' <br />
-min_info_gain: the minimum information gain required to make the split <br />
+<b>min_info_gain</b>: the minimum information gain required to make the split <br />
            values allowed: any real number <br />
-split_node_criterion: the criterion used to measure the information gain for the node <br />
+<b>split_node_criterion</b>: the criterion used to measure the information gain for the node <br />
            values allowed: 'gini' or 'entropy' <br />
 
-Training  and Testing data are to be provided as a pandas DataFrame <br />
-Training and Testing lables are to be provided as a numpy array <br />
+<i>Training  and Testing data are to be provided as a pandas DataFrame </i><br />
+<i>Training and Testing lables are to be provided as a numpy array </i><br />
 
 Sample code to run decisiontree.py: <br />
 The given code will construct a decision tree of max_depth=2 from the given data
