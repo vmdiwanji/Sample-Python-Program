@@ -7,28 +7,28 @@ Python Version: 3.7.4
 
 Libraries Used: Pandas, Numpy
 
-Explanation:
+Explanation: <br />
 
-decisiontree.py constructs a decision tree with the parameters described below -
-max_depth: the maximum depth upto which the decision tree can be built
-           values allowed: any integer
-split_val_metric: the metric used to divide the data into two parts for a feature
-           values allowed: 'mean' or 'median'
-min_info_gain: the minimum information gain required to make the split
-           values allowed: any real number
-split_node_criterion: the criterion used to measure the information gain for the node
-           values allowed: 'gini' or 'entropy'
+decisiontree.py constructs a decision tree with the parameters described below - <br />
+max_depth: the maximum depth upto which the decision tree can be built <br />
+           values allowed: any integer <br />
+split_val_metric: the metric used to divide the data into two parts for a feature <br />
+           values allowed: 'mean' or 'median' <br />
+min_info_gain: the minimum information gain required to make the split <br />
+           values allowed: any real number <br />
+split_node_criterion: the criterion used to measure the information gain for the node <br />
+           values allowed: 'gini' or 'entropy' <br />
 
-Training  and Testing data are to be provided as a pandas DataFrame
-Training and Testing lables are to be provided as a numpy array
+Training  and Testing data are to be provided as a pandas DataFrame <br />
+Training and Testing lables are to be provided as a numpy array <br />
 
-Sample code to run decisiontree.py:
+Sample code to run decisiontree.py: <br />
 The given code will construct a decision tree of max_depth=2 from the given data
-    X_train=pd.DataFrame(np.array([[0,0],[1,1],[0,1],[1,0]]))
-    Y_train=np.array([1,1,0,0])
-    dec= DecisionTree(max_depth=2)
-    dec.train(X_train,Y_train)
-    print(dec.predict(pd.DataFrame(np.array([[0,0]]))))
+    X_train=pd.DataFrame(np.array([[0,0],[1,1],[0,1],[1,0]])) <br />
+    Y_train=np.array([1,1,0,0]) <br />
+    dec= DecisionTree(max_depth=2) <br />
+    dec.train(X_train,Y_train) <br />
+    print(dec.predict(pd.DataFrame(np.array([[0,0]])))) <br />
 
 
 
